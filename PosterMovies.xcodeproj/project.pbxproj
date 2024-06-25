@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		9EFCFE4B2C2A80CA00297847 /* PosterMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFCFE4A2C2A80CA00297847 /* PosterMoviesApp.swift */; };
-		9EFCFE4D2C2A80CA00297847 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFCFE4C2C2A80CA00297847 /* ContentView.swift */; };
+		9EFCFE4D2C2A80CA00297847 /* PosterMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFCFE4C2C2A80CA00297847 /* PosterMoviesView.swift */; };
 		9EFCFE4F2C2A80CB00297847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFCFE4E2C2A80CB00297847 /* Assets.xcassets */; };
 		9EFCFE522C2A80CB00297847 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFCFE512C2A80CB00297847 /* Preview Assets.xcassets */; };
+		9EFCFE592C2A80FE00297847 /* MoviePosterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFCFE582C2A80FE00297847 /* MoviePosterItemView.swift */; };
+		9EFCFE5B2C2A815900297847 /* MoviePosterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFCFE5A2C2A815900297847 /* MoviePosterItem.swift */; };
+		9EFCFE5D2C2A819800297847 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFCFE5C2C2A819800297847 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9EFCFE472C2A80CA00297847 /* PosterMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosterMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFCFE4A2C2A80CA00297847 /* PosterMoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterMoviesApp.swift; sourceTree = "<group>"; };
-		9EFCFE4C2C2A80CA00297847 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9EFCFE4C2C2A80CA00297847 /* PosterMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterMoviesView.swift; sourceTree = "<group>"; };
 		9EFCFE4E2C2A80CB00297847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EFCFE512C2A80CB00297847 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9EFCFE582C2A80FE00297847 /* MoviePosterItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterItemView.swift; sourceTree = "<group>"; };
+		9EFCFE5A2C2A815900297847 /* MoviePosterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterItem.swift; sourceTree = "<group>"; };
+		9EFCFE5C2C2A819800297847 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				9EFCFE4A2C2A80CA00297847 /* PosterMoviesApp.swift */,
-				9EFCFE4C2C2A80CA00297847 /* ContentView.swift */,
+				9EFCFE4C2C2A80CA00297847 /* PosterMoviesView.swift */,
+				9EFCFE582C2A80FE00297847 /* MoviePosterItemView.swift */,
+				9EFCFE5A2C2A815900297847 /* MoviePosterItem.swift */,
+				9EFCFE5C2C2A819800297847 /* DataService.swift */,
 				9EFCFE4E2C2A80CB00297847 /* Assets.xcassets */,
 				9EFCFE502C2A80CB00297847 /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EFCFE4D2C2A80CA00297847 /* ContentView.swift in Sources */,
+				9EFCFE5B2C2A815900297847 /* MoviePosterItem.swift in Sources */,
+				9EFCFE592C2A80FE00297847 /* MoviePosterItemView.swift in Sources */,
+				9EFCFE4D2C2A80CA00297847 /* PosterMoviesView.swift in Sources */,
 				9EFCFE4B2C2A80CA00297847 /* PosterMoviesApp.swift in Sources */,
+				9EFCFE5D2C2A819800297847 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
