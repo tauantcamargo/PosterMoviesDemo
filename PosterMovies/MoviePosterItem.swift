@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct MoviePosterItem: Identifiable {
+    var id: UUID = UUID()
+    var name: String
+    var imageName: String
+}
