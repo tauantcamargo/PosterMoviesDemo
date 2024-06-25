@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct MoviePosterItemView: View {
+    var item: MoviePosterItem
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 0.2) {
+            Image(item.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding()
+            
+            Text(item.name)
+                .font(.title3)
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .foregroundStyle(Color.white)
+        }
+        .listRowSeparator(.hidden)
+        .listRowBackground(Color(.black))
     }
 }
 
 #Preview {
-    MoviePosterItemView()
+    MoviePosterItemView(item: MoviePosterItem(name: "Mission Impossible", imageName: "missionimpossible"))
 }
