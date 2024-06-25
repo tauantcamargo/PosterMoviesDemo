@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct PosterMoviesView: View {
+    @State var postersItems: [MoviePosterItem] = [MoviePosterItem]()
+    var dataService = DataService()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color(.black)
+                .ignoresSafeArea()
+            
+            List(postersItems) {posterItem in
+                MoviePosterItemView(item: posterItem)
+            }
+            .listStyle(.plain)
+            .onAppear() {
+                postersItems = dataService.getData()
+            }
         }
-        .padding()
     }
 }
 
